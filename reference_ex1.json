@@ -1,0 +1,56 @@
+{
+ "_about": "Published MEPS estimates from AHRQ's workshop Exercise 1 SAS outputs (github.com/HHS-AHRQ/MEPS, SAS/workshop_exercises/exercise_1a and exercise_1b, *_OUTPUT.TXT), written down 2026-11-17 before any estimate was computed. Values are strings exactly as printed; tolerance is half a unit in the last printed digit. Transcribed through a web-reading tool, so the job also saves the raw OUTPUT.TXT files: a mismatch is graded against the raw file. Figure keys follow meps_est.workshop(): exp.<svc>.all = all persons, .with = persons with that expense, .with.age1/.with.age2 = with that expense and age 0-64 / 65+, .age1/.age2 = all persons of that age; flag.<svc> = share of persons with that expense; share.<svc> = <svc> expense / total expense.",
+ "ex1a_2016": {
+  "file": "HC-192 (2016 full-year consolidated)",
+  "figures": {
+   "design": {"records": "34655", "used": "33259", "nonpositive": "1396", "pop": "323141687"},
+   "flag.total": {"n": "33259", "pop": "323141687", "mean": "0.85", "se_mean": "0.00359", "total": "273773024", "se_total": "6396258"},
+   "exp.total.all": {"n": "33259", "pop": "323141687", "mean": "5005.64", "se_mean": "116.95824", "total": "1617531007314", "se_total": "50638644399"},
+   "exp.total.with": {"n": "26942", "pop": "273773024", "mean": "5908.3", "se_mean": "133.8208", "total": "1617531007314", "se_total": "50638644399"},
+   "exp.total.with.age1": {"n": "22513", "pop": "224366322", "mean": "4615.1", "se_mean": "137.6071", "total": "1035478590271", "se_total": "38245335117"},
+   "exp.total.with.age2": {"n": "4429", "pop": "49406702", "mean": "11780.8", "se_mean": "429.1720", "total": "582052417044", "se_total": "26901634384"}
+  }
+ },
+ "ex1b_2015": {
+  "file": "HC-181 (2015 full-year consolidated)",
+  "figures": {
+   "design": {"records": "35427", "used": "33893", "nonpositive": "1534", "strata": "165", "psus": "369", "pop": "321423251"},
+   "share.ip": {"ratio": "0.266393", "se_ratio": "0.011469"},
+   "share.amb": {"ratio": "0.371018", "se_ratio": "0.009410"},
+   "share.rx": {"ratio": "0.233146", "se_ratio": "0.006875"},
+   "share.dv": {"ratio": "0.059952", "se_ratio": "0.001960"},
+   "share.hh": {"ratio": "0.069491", "se_ratio": "0.005958"},
+   "flag.total": {"n": "33893", "mean": "0.853569", "se_mean": "0.003762", "total": "274356895", "se_total": "6551954"},
+   "flag.ip": {"n": "33893", "mean": "0.063715", "se_mean": "0.001927", "total": "20479364", "se_total": "703986"},
+   "flag.amb": {"n": "33893", "mean": "0.760871", "se_mean": "0.004463", "total": "244561763", "se_total": "5968022"},
+   "flag.rx": {"n": "33893", "mean": "0.613064", "se_mean": "0.004868", "total": "197052918", "se_total": "4821206"},
+   "flag.dv": {"n": "33893", "mean": "0.417843", "se_mean": "0.006402", "total": "134304354", "se_total": "3932674"},
+   "flag.hh": {"n": "33893", "mean": "0.212560", "se_mean": "0.003794", "total": "68321692", "se_total": "2083517"},
+   "exp.total.all": {"n": "33893", "pop": "321423251", "mean": "4977.571930", "se_mean": "134.414461", "total": "1599907351396", "se_total": "52731878601"},
+   "exp.total.age1": {"n": "29521", "pop": "271829915", "mean": "3876.446509", "se_mean": "134.983704", "total": "1053734126237", "se_total": "42177372538"},
+   "exp.total.age2": {"n": "4372", "pop": "49593336", "mean": "11013", "se_mean": "336.115439", "total": "546173225160", "se_total": "23068225318"},
+   "exp.total.with.age1": {"n": "23448", "pop": "226639193", "mean": "4649.390571", "se_mean": "159.062312", "total": "1053734126237", "se_total": "42177372538"},
+   "exp.total.with.age2": {"n": "4184", "pop": "47717702", "mean": "11446", "se_mean": "342.991434", "total": "546173225160", "se_total": "23068225318"},
+   "exp.ip.all": {"n": "33893", "pop": "321423251", "mean": "1325.988913", "se_mean": "79.053759", "total": "426203666990", "se_total": "24916792071"},
+   "exp.ip.with": {"n": "2045", "pop": "20479364", "mean": "20811", "se_mean": "998.332312", "total": "426203666990", "se_total": "24916792071"},
+   "exp.ip.with.age1": {"n": "1342", "pop": "12233914", "mean": "20482", "se_mean": "1476.222296", "total": "250574288710", "se_total": "21638217854"},
+   "exp.ip.with.age2": {"n": "703", "pop": "8245450", "mean": "21300", "se_mean": "1279.161949", "total": "175629378281", "se_total": "12880405879"},
+   "exp.amb.all": {"n": "33893", "pop": "321423251", "mean": "1846.769233", "se_mean": "51.144424", "total": "593594570455", "se_total": "22284974852"},
+   "exp.amb.with": {"n": "24216", "pop": "244561763", "mean": "2427.176530", "se_mean": "62.697077", "total": "593594570455", "se_total": "22284974852"},
+   "exp.amb.with.age1": {"n": "20191", "pop": "198431386", "mean": "2161.816655", "se_mean": "67.265339", "total": "428972274932", "se_total": "18746444400"},
+   "exp.amb.with.age2": {"n": "4025", "pop": "46130377", "mean": "3568.631062", "se_mean": "106.885564", "total": "164622295524", "se_total": "7569126221"},
+   "exp.rx.all": {"n": "33893", "pop": "321423251", "mean": "1160.502241", "se_mean": "48.429556", "total": "373012402939", "se_total": "17213224795"},
+   "exp.rx.with": {"n": "19015", "pop": "197052918", "mean": "1892.955494", "se_mean": "75.499037", "total": "373012402939", "se_total": "17213224795"},
+   "exp.rx.with.age1": {"n": "15096", "pop": "152407598", "mean": "1628.895862", "se_mean": "93.722350", "total": "248256106459", "se_total": "15348255016"},
+   "exp.rx.with.age2": {"n": "3919", "pop": "44645319", "mean": "2794.386934", "se_mean": "117.111113", "total": "124756296480", "se_total": "6022214391"},
+   "exp.dv.all": {"n": "33893", "pop": "321423251", "mean": "298.416797", "se_mean": "7.614242", "total": "95918096998", "se_total": "3327595741"},
+   "exp.dv.with": {"n": "12526", "pop": "134304354", "mean": "714.184565", "se_mean": "17.100025", "total": "95918096998", "se_total": "3327595741"},
+   "exp.dv.with.age1": {"n": "10832", "pop": "111592123", "mean": "670.043229", "se_mean": "18.377082", "total": "74771546322", "se_total": "2884075041"},
+   "exp.dv.with.age2": {"n": "1694", "pop": "22712232", "mean": "931.064418", "se_mean": "45.620709", "total": "21146550675", "se_total": "1435722843"},
+   "exp.hh.all": {"n": "33893", "pop": "321423251", "mean": "345.898105", "se_mean": "31.126672", "total": "111179693539", "se_total": "10281333639"},
+   "exp.hh.with": {"n": "6237", "pop": "68321692", "mean": "1627.297129", "se_mean": "144.112225", "total": "111179693539", "se_total": "10281333639"},
+   "exp.hh.with.age1": {"n": "4699", "pop": "50686433", "mean": "1009.354848", "se_mean": "163.964022", "total": "51160597066", "se_total": "8510015564"},
+   "exp.hh.with.age2": {"n": "1538", "pop": "17635259", "mean": "3403.357819", "se_mean": "275.860409", "total": "60019096474", "se_total": "5077547619"}
+  }
+ }
+}
